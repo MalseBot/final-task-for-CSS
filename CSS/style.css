@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro{
+    background-image: url(../images/hero-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover ;
+    background-position: right;
+}
+.main h1{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 100px ;
+}
+.main a{
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: trans;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+@keyframes trans {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+
+}
+.statics svg{
+    font-size: 45px;
+}
+.transLeft{
+    transform: translateX(50px);
+}
+@media (min-width:900px) {
+    .statics{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .statics .cardE{
+        width: 40%;
+    }
+}
+.h5-after::after{
+    contain: "";
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.432);
+    border-radius: 50%;
+    left: -25px;
+    top: 5px;
+}
+.border-start{
+    border-left: 2px solid rgba(0, 0, 0, 0.432) !important;
+}
